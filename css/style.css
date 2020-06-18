@@ -1,0 +1,89 @@
+:root{
+    --color1: white;
+    --color2: lightgray;
+    --color3: #bdb5b5;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 5px solid white;
+    background-color: white;
+    font-family: 'Cabin', sans-serif;
+    color: #0000ff;
+    white-space:nowrap;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+tr{
+    color: black;
+}
+
+td{
+    padding: 20px;
+}
+
+tr:nth-child(even) td:nth-child(2n+1){
+    background-color: var(--color3);
+}
+
+tr:nth-child(even) td:nth-child(2n){
+    background-color: var(--color2);
+}
+
+tr:nth-child(2n+3) td:nth-child(2n+1){
+    background-color: var(--color2);
+}
+
+tr:nth-child(n+2) td:nth-child(1){
+    text-align: left;
+}
+
+tr:nth-child(1) td:nth-child(1){
+    border-radius: 15px 0 0 0;
+}
+
+tr:nth-child(1) td:nth-last-child(1){
+    border-radius: 0 15px 0 0;
+}
+
+tr:nth-last-child(1) td:nth-child(1){
+    border-radius: 0 0 0 15px;
+}
+
+tr:nth-last-child(1) td:nth-last-child(1){
+    border-radius: 0 0 15px 0;
+}
+
+.tableHeader{
+    min-width: 100px;
+    padding: 10px 30px;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+}
+
+.tableHeaderPlan{
+    margin: 0 auto 20px;
+}
+
+.tableHeaderCost{
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.tableHeaderRange{
+    margin: 0;
+}
+
+.button{
+    padding: 5px 20px;
+}
